@@ -22,7 +22,16 @@ class HomepageTests(unittest.TestCase):
                     self.assertEqual(headers['Content-Type'],mime)
                 for route in ['/legacy','/legacy/']:
                     self.assertEqual(get(route)[2],(app.STATIC/'index.html').read_bytes())
-                self.assertEqual(get('/workspace')[2],get('/workspace/')[2])
+                # Assert the redirect itself: urllib's 308 handling varies by Python version.
+                from http.client import HTTPConnection
+                connection=HTTPConnection('127.0.0.1',server.server_port)
+                try:
+                    connection.request('GET','/workspace')
+                    response=connection.getresponse()
+                    self.assertEqual(response.status,308)
+                    self.assertEqual(response.getheader('Location'),'/workspace/')
+                    self.assertEqual(response.read(),b'')
+                finally:connection.close()
                 self.assertIn(b'workspace-core.js',get('/workspace/')[2])
                 self.assertIn(b'preview: false',get('/workspace/runtime-config.js')[2])
                 home=get('/')[2].decode()
