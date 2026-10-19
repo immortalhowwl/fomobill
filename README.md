@@ -32,9 +32,9 @@ Pair your browser watchlist, confirm `/subscribe`, and receive supported event a
 
 ## The workspace
 
-![FOMOBILL bundled workspace, captured from this source](docs/images/workspace.png)
+![FOMOBILL current website](docs/images/workspace.png)
 
-*Actual local workspace from this repository, before a token lookup. No sample trading activity is presented as live data.*
+*Current website interface. The separately maintained frontend shown here is not included in this backend and bot repository.*
 
 | Surface | What it does |
 | --- | --- |
