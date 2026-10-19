@@ -206,7 +206,7 @@ class Notifications:
             'invalid_pairing': 'LINK EXPIRED OR INVALID\n\nGet a fresh pairing link from the website, or use /start to continue directly in Telegram.\n\nhttps://fomobill.fun/workspace/',
             'pairing_conflict': 'PAIRING NOT CHANGED\n\nThis chat or website is already linked to another identity. Existing wallets and preferences are preserved.\n\nUse /status to check this chat; use the originally linked browser for website monitoring.',
             'capacity': 'ACCOUNT LIMIT REACHED\n\nNo new account was created. Please try again later.',
-            'unknown': 'COMMAND NOT RECOGNIZED\n\n/help — setup and commands\n/status — your current settings'}
+            'unknown': 'QUICK GUIDE\n\nUse the commands below to get started or check your settings.\n\n/help — setup and commands\n/status — your current settings'}
         return '△ FOMOBILL · ' + messages.get(outcome, messages['unknown']) + '\n\n' + status
 
     def drain_replies(self, send, send_photo=None):
