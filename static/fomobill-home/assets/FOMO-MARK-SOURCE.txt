@@ -1,0 +1,4 @@
+FOMO symbol source: https://fomo.family/favicon.svg
+Retrieved: 2026-10-17
+Silhouette traced from the embedded official 1024 px app mark; tolerance 0.8 source pixels. Geometry retains both outlines with even-odd fill. Rendered in the existing FOMOBILL gold via currentColor. No external runtime requests.
+The FOMO mark belongs to its respective owner. This asset does not imply endorsement.

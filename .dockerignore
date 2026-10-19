@@ -1,0 +1,9 @@
+*
+!Dockerfile
+!app.py
+!monitoring.py
+!notifications.py
+!holders.py
+!holder_history_sources.py
+!static/
+!static/**

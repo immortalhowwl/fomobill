@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#25070c">
+  <meta name="description" content="Follow the trail with FOMOBILL. Explore Solana token holders, monitored wallets and the original transactions behind observed buys and sales.">
+  <title>FOMOBILL — Every wallet leaves a trail.</title>
+  <link rel="icon" href="/fomobill-home/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/fomobill-home/assets/inferno-poster.webp" as="image">
+  <link rel="preload" href="/fomobill-home/assets/Archivo-Variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/fomobill-home/fomobill-home.css?v=fomo-mark-3">
+  <script src="/fomobill-home/fomobill-home.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#destinations">Skip to workspace sections</a>
+  <div class="world" aria-hidden="true">
+    <img class="world-poster" src="/fomobill-home/assets/inferno-poster.webp" alt="" width="1672" height="941" fetchpriority="high">
+    <video id="world-video" class="world-video" muted loop playsinline preload="none" poster="/fomobill-home/assets/inferno-poster.webp" data-src="/fomobill-home/assets/inferno-loop.mp4" tabindex="-1"></video>
+    <div class="world-shade"></div>
+    <div class="world-grain"></div>
+  </div>
+
+  <div class="page">
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="FOMOBILL home">
+        <svg viewBox="0 0 32 36" aria-hidden="true"><path d="M16 7 2 31h28Z"/><path d="M12 2h8v7h-8zM9 9h14"/><path class="brand-eye" d="M9 22q7-9 14 0-7 8-14 0Z"/><path d="M16 18v8"/></svg>
+        <span>FOMOBILL<span class="brand-sub">SOLANA INTELLIGENCE</span></span>
+      </a>
+      <nav class="topnav" aria-label="Utility navigation">
+        <span class="read-only"><span></span> READ-ONLY</span>
+        <a class="terminal-link" href="/workspace/#tokens">Workspace </a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="bill-stage" id="bill-stage">
+          <div class="bill-aura"></div>
+          <div class="bill-float" id="bill-float">
+            <svg id="bill" class="bill" viewBox="0 0 300 340" role="img" aria-labelledby="bill-title">
+              <title id="bill-title">Bill Cipher, keeping an eye on the trail</title>
+              <defs>
+                <linearGradient id="body-edge" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#fbb24d" stop-opacity=".75"/><stop offset=".45" stop-color="#fbb24d" stop-opacity=".04"/><stop offset="1" stop-color="#f7d96e" stop-opacity=".5"/></linearGradient>
+                <radialGradient id="eye-color"><stop stop-color="#fffdaf"/><stop offset=".75" stop-color="#f5f78d"/><stop offset="1" stop-color="#e2e675"/></radialGradient>
+                <filter id="eye-glow" x="-70%" y="-120%" width="240%" height="340%"><feGaussianBlur stdDeviation="12"/></filter>
+                <clipPath id="eye-clip"><path d="M109 157Q150 109 191 157Q151 195 109 157Z"/></clipPath>
+              </defs>
+              <g class="bill-limbs" fill="none" stroke="#050505" stroke-width="11" stroke-linecap="round" stroke-linejoin="round">
+                <path class="arm arm-left" d="M84 223Q78 256 78 288q-3 11 6 15m-7-10 8 3"/>
+                <path class="arm arm-right" d="M216 223Q222 257 221 292q2 13-7 15m8-10-8 3"/>
+                <path class="leg leg-left" d="M130 231v34q0 13-12 12l-1-14"/>
+                <path class="leg leg-right" d="M169 231v34q0 13 12 12l1-14"/>
+              </g>
+              <path d="M150 64 45 237h210Z" fill="#030504" stroke="url(#body-edge)" stroke-width="1.4"/>
+              <path d="M150 64 45 237h9L150 76Z" fill="#d4b94a" opacity=".025"/>
+              <g id="eye-whole">
+                <path d="M109 157Q150 109 191 157Q151 195 109 157Z" fill="#ecf47e" filter="url(#eye-glow)" opacity=".77"/>
+                <path d="M109 157Q150 109 191 157Q151 195 109 157Z" fill="url(#eye-color)"/>
+                <g clip-path="url(#eye-clip)"><g id="pupil"><ellipse cx="150" cy="157" rx="4.6" ry="20" fill="#222c09"/><ellipse cx="152" cy="148" rx=".8" ry="4" fill="#757f29" opacity=".65"/></g></g>
+              </g>
+              <path d="M136 5h31v47h-31z" fill="#020403" stroke="#d7ae51" stroke-opacity=".16"/>
+              <path d="M125 51h54v8h-54z" fill="#020403"/>
+            </svg>
+          </div>
+          <div class="bill-shadow"></div>
+        </div>
+        <p class="eyebrow"><span></span> FOLLOW THE ON-CHAIN TRAIL <span></span></p>
+        <h1 id="hero-title">FOMOBILL</h1>
+        <p class="hero-lead">Every wallet leaves a trail.</p>
+        <p class="hero-description"><span class="copy-wide">See who bought. Check what happened next.<br>Open the transactions behind the story.</span><span class="copy-compact">Trace buys, sales and the original transactions.</span></p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="/workspace/#tokens"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12s3.6-6 9-6 9 6 9 6-3.6 6-9 6-9-6-9-6Z"/><circle cx="12" cy="12" r="2.5"/></svg> OPEN WORKSPACE </a>
+          <button class="button button-secondary" id="how-button" type="button">HOW IT WORKS <span aria-hidden="true">+</span></button>
+        </div>
+        <div class="evidence-pipeline" aria-label="Workflow: token, holders, receipts. Read only."><span class="pipeline-bracket" aria-hidden="true">[</span><span><b>01</b> TOKEN</span><i aria-hidden="true"></i><span><b>02</b> HOLDERS</span><i aria-hidden="true"></i><span><b>03</b> RECEIPTS</span><span class="pipeline-bracket" aria-hidden="true">]</span></div>
+      </section>
+
+      <section class="destinations" id="destinations" aria-label="Choose a FOMOBILL workspace section">
+        <div class="section-marker"><span>CHOOSE YOUR NEXT MOVE</span><span class="section-line"></span><span>01 — 04</span></div>
+        <div class="destination-grid">
+          <a class="destination" href="/workspace/#tokens">
+            <div class="card-top"><svg class="fomo-mark" viewBox="114 260 800 504" aria-hidden="true"><path fill-rule="evenodd" d="M373 262 L394 262 L394 263 L406 263 L406 264 L414 264 L414 265 L425 266 L425 267 L429 267 L429 268 L433 268 L433 269 L437 269 L437 270 L449 273 L451 275 L459 277 L459 278 L473 284 L474 286 L478 287 L479 289 L481 289 L482 291 L484 291 L485 293 L490 295 L492 298 L494 298 L498 303 L500 303 L520 323 L520 325 L524 328 L524 330 L527 332 L527 334 L530 336 L530 338 L534 342 L534 344 L537 347 L539 352 L556 335 L558 335 L564 328 L566 328 L570 323 L572 323 L575 319 L577 319 L583 313 L588 311 L590 308 L592 308 L593 306 L595 306 L599 302 L603 301 L604 299 L608 298 L609 296 L615 294 L616 292 L618 292 L618 291 L620 291 L620 290 L622 290 L622 289 L624 289 L624 288 L626 288 L626 287 L628 287 L632 284 L635 284 L639 281 L647 279 L649 277 L652 277 L652 276 L655 276 L655 275 L658 275 L658 274 L661 274 L661 273 L664 273 L664 272 L667 272 L667 271 L671 271 L671 270 L674 270 L674 269 L687 267 L687 266 L707 264 L707 263 L719 263 L719 262 L752 263 L752 264 L759 264 L759 265 L765 265 L765 266 L779 268 L779 269 L782 269 L782 270 L786 270 L786 271 L795 273 L795 274 L800 275 L804 278 L807 278 L807 279 L817 283 L818 285 L822 286 L823 288 L827 289 L828 291 L833 293 L835 296 L837 296 L839 299 L841 299 L845 304 L847 304 L864 321 L864 323 L869 327 L869 329 L875 335 L875 337 L877 338 L877 340 L881 344 L882 348 L884 349 L887 357 L889 358 L889 360 L891 362 L891 365 L892 365 L892 367 L895 371 L895 374 L897 376 L897 379 L898 379 L898 382 L900 384 L901 391 L902 391 L902 394 L903 394 L903 397 L904 397 L906 410 L907 410 L907 415 L908 415 L908 420 L909 420 L910 435 L911 435 L912 470 L911 470 L911 485 L910 485 L910 494 L909 494 L908 507 L907 507 L907 512 L906 512 L906 517 L905 517 L905 522 L904 522 L901 538 L900 538 L900 541 L899 541 L899 545 L898 545 L894 560 L892 562 L892 565 L890 567 L888 575 L885 579 L885 582 L884 582 L884 584 L883 584 L883 586 L882 586 L882 588 L881 588 L881 590 L880 590 L874 604 L872 605 L870 611 L868 612 L867 616 L865 617 L864 621 L862 622 L862 624 L860 625 L860 627 L858 628 L858 630 L856 631 L854 636 L851 638 L851 640 L848 642 L848 644 L845 646 L845 648 L842 650 L842 652 L837 656 L837 658 L831 663 L831 665 L803 693 L801 693 L796 699 L794 699 L786 707 L784 707 L782 710 L780 710 L775 715 L773 715 L772 717 L770 717 L766 721 L762 722 L758 726 L752 728 L751 730 L749 730 L749 731 L747 731 L747 732 L745 732 L745 733 L743 733 L743 734 L741 734 L741 735 L739 735 L739 736 L737 736 L737 737 L735 737 L735 738 L733 738 L733 739 L731 739 L727 742 L724 742 L722 744 L714 746 L712 748 L709 748 L709 749 L706 749 L706 750 L703 750 L703 751 L700 751 L700 752 L696 752 L696 753 L693 753 L693 754 L681 756 L681 757 L665 759 L665 760 L657 760 L657 761 L645 761 L645 762 L624 762 L624 761 L604 760 L604 759 L598 759 L598 758 L593 758 L593 757 L581 755 L581 754 L566 750 L564 748 L561 748 L561 747 L559 747 L559 746 L557 746 L557 745 L543 739 L542 737 L540 737 L537 734 L535 734 L534 732 L532 732 L530 729 L528 729 L522 723 L520 723 L514 716 L512 716 L507 710 L503 707 L503 705 L493 695 L493 693 L490 691 L490 689 L488 688 L488 686 L486 685 L486 683 L484 682 L484 680 L482 679 L481 675 L478 672 L455 695 L453 695 L449 700 L447 700 L444 704 L442 704 L440 707 L438 707 L432 713 L430 713 L429 715 L427 715 L426 717 L424 717 L423 719 L421 719 L417 723 L413 724 L412 726 L408 727 L407 729 L399 732 L398 734 L396 734 L396 735 L394 735 L390 738 L387 738 L387 739 L385 739 L385 740 L383 740 L379 743 L371 745 L369 747 L366 747 L366 748 L363 748 L363 749 L360 749 L360 750 L357 750 L357 751 L354 751 L354 752 L351 752 L351 753 L347 753 L347 754 L344 754 L344 755 L340 755 L340 756 L335 756 L335 757 L325 758 L325 759 L319 759 L319 760 L311 760 L311 761 L278 762 L278 761 L266 761 L266 760 L252 759 L252 758 L247 758 L247 757 L235 755 L235 754 L223 751 L221 749 L218 749 L216 747 L213 747 L213 746 L199 740 L198 738 L194 737 L193 735 L191 735 L190 733 L188 733 L187 731 L182 729 L180 726 L178 726 L174 721 L172 721 L152 701 L152 699 L148 696 L148 694 L145 692 L145 690 L142 688 L142 686 L138 682 L137 678 L135 677 L134 673 L132 672 L132 670 L131 670 L131 668 L130 668 L130 666 L129 666 L129 664 L128 664 L128 662 L125 658 L125 655 L122 651 L122 648 L120 646 L120 643 L119 643 L119 640 L118 640 L118 637 L117 637 L117 634 L116 634 L116 632 L289 632 L289 631 L293 630 L296 627 L296 625 L298 624 L298 621 L299 621 L299 617 L300 617 L300 614 L301 614 L301 610 L302 610 L302 607 L303 607 L303 603 L304 603 L304 600 L305 600 L305 596 L306 596 L306 593 L307 593 L307 589 L308 589 L308 586 L309 586 L309 582 L310 582 L310 579 L311 579 L311 575 L312 575 L312 572 L313 572 L313 568 L314 568 L314 565 L315 565 L315 561 L316 561 L316 558 L317 558 L317 554 L318 554 L318 551 L319 551 L319 547 L320 547 L320 544 L321 544 L321 540 L322 540 L322 537 L323 537 L323 533 L324 533 L324 530 L325 530 L325 526 L326 526 L326 523 L327 523 L329 512 L330 512 L330 509 L331 509 L331 506 L332 506 L332 502 L333 502 L333 499 L334 499 L334 495 L335 495 L335 492 L336 492 L336 488 L337 488 L337 485 L338 485 L338 481 L339 481 L339 478 L340 478 L340 474 L341 474 L341 471 L342 471 L342 467 L343 467 L343 464 L344 464 L344 460 L345 460 L345 457 L346 457 L346 453 L347 453 L347 450 L348 450 L348 446 L349 446 L349 443 L350 443 L350 439 L351 439 L351 436 L352 436 L352 432 L353 432 L353 429 L354 429 L354 425 L355 425 L356 418 L357 418 L357 415 L358 415 L358 411 L359 411 L359 408 L360 408 L360 404 L361 404 L361 401 L362 401 L361 395 L357 392 L162 392 L162 391 L166 387 L166 385 L169 383 L169 381 L172 379 L172 377 L175 375 L175 373 L179 370 L179 368 L185 363 L185 361 L194 353 L194 351 L207 338 L209 338 L217 329 L219 329 L228 320 L230 320 L232 317 L234 317 L236 314 L238 314 L240 311 L242 311 L243 309 L245 309 L246 307 L248 307 L249 305 L251 305 L255 301 L259 300 L260 298 L264 297 L265 295 L273 292 L274 290 L276 290 L276 289 L278 289 L282 286 L285 286 L285 285 L287 285 L287 284 L289 284 L293 281 L296 281 L298 279 L301 279 L303 277 L306 277 L306 276 L309 276 L309 275 L312 275 L312 274 L315 274 L315 273 L318 273 L318 272 L321 272 L321 271 L325 271 L325 270 L328 270 L328 269 L337 268 L337 267 L341 267 L341 266 L361 264 L361 263 L373 263Z M508 392 L506 393 L506 395 L504 396 L504 398 L500 402 L499 406 L497 407 L496 411 L494 412 L492 418 L490 419 L490 421 L489 421 L489 423 L488 423 L488 425 L487 425 L487 427 L486 427 L486 429 L485 429 L485 431 L484 431 L484 433 L483 433 L483 435 L482 435 L482 437 L481 437 L481 439 L478 443 L478 446 L475 450 L475 453 L473 455 L473 458 L471 460 L469 469 L468 469 L467 474 L466 474 L466 478 L465 478 L465 481 L464 481 L464 484 L463 484 L463 488 L462 488 L459 503 L458 503 L457 513 L456 513 L454 533 L453 533 L453 543 L452 543 L452 585 L453 585 L455 608 L456 608 L456 613 L457 613 L458 622 L459 622 L461 632 L654 632 L654 631 L658 630 L661 627 L662 624 L663 620 L664 620 L665 613 L666 613 L666 609 L667 609 L667 606 L668 606 L668 602 L669 602 L669 599 L670 599 L670 595 L671 595 L671 592 L672 592 L672 588 L673 588 L673 585 L674 585 L674 581 L675 581 L675 578 L676 578 L676 574 L677 574 L677 571 L678 571 L678 567 L679 567 L681 557 L682 557 L682 554 L683 554 L683 550 L684 550 L684 547 L685 547 L685 543 L686 543 L686 540 L687 540 L687 536 L688 536 L688 533 L689 533 L689 529 L690 529 L690 526 L691 526 L691 522 L692 522 L692 519 L693 519 L693 515 L694 515 L694 512 L695 512 L695 508 L696 508 L696 505 L697 505 L697 501 L698 501 L698 498 L699 498 L699 494 L700 494 L700 491 L701 491 L701 487 L702 487 L702 484 L703 484 L703 480 L704 480 L704 477 L705 477 L705 473 L706 473 L706 470 L707 470 L707 466 L708 466 L708 463 L709 463 L709 459 L710 459 L710 456 L711 456 L711 452 L712 452 L712 449 L713 449 L713 445 L714 445 L714 442 L715 442 L715 438 L716 438 L716 435 L717 435 L717 432 L718 432 L718 428 L719 428 L719 425 L720 425 L720 421 L721 421 L721 418 L722 418 L724 407 L725 407 L725 404 L726 404 L726 395 L722 392Z"/></svg><span class="card-index">01</span></div>
+            <h2>Token explorer</h2><p><span class="copy-wide">Start with a token. Inspect available holders and observed trades.</span><span class="copy-compact">Holders &amp; observed trades.</span></p><span class="card-action">EXPLORE TOKENS <span aria-hidden="true">→</span></span>
+          </a>
+          <a class="destination" href="/workspace/#wallets">
+            <div class="card-top"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="12"/><circle cx="16" cy="16" r="7"/><path d="m16 16 9-9M16 3v4M3 16h4M16 25v4M25 16h4"/><circle cx="16" cy="16" r="1.5"/></svg><span class="card-index">02</span></div>
+            <h2>Wallet monitor</h2><p><span class="copy-wide">Watch selected wallets. Check co-buys and later observed sales.</span><span class="copy-compact">Co-buys &amp; later sales.</span></p><span class="card-action">WATCH THE TRAIL <span aria-hidden="true">→</span></span>
+          </a>
+          <a class="destination" href="/workspace/#alerts">
+            <div class="card-top"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M28 5 4 14l9 4 4 9 11-22Z"/><path d="m13 18 15-13M17 27l3-8"/></svg><span class="card-index">03</span></div>
+            <h2>Telegram alerts</h2><p><span class="copy-wide">Open Telegram pairing and your optional notification controls.</span><span class="copy-compact">Pair your alerts.</span></p><span class="card-action">TELEGRAM SETUP <span aria-hidden="true">→</span></span>
+          </a>
+          <a class="destination" href="/workspace/#lookup">
+            <div class="card-top"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="14" cy="14" r="8"/><path d="m20 20 8 8M11 14h6M14 11v6M3 10V3h7M22 3h7v7"/></svg><span class="card-index">04</span></div>
+            <h2>Manual lookup</h2><p><span class="copy-wide">Inspect a public address. Check sources and keep local bookmarks.</span><span class="copy-compact">Check a public address.</span></p><span class="card-action">CHECK AN ADDRESS <span aria-hidden="true">→</span></span>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer><span>PUBLIC SOLANA DATA <i>·</i> NO WALLET CONNECTION</span><a href="/workspace/#sourceLimits">Source coverage </a></footer>
+  </div>
+
+  <dialog id="how-dialog" aria-labelledby="how-title">
+    <button class="dialog-close" id="close-dialog" aria-label="Close explanation" type="button">×</button>
+    <p class="eyebrow">THE FOMOBILL WORKFLOW</p>
+    <h2 id="how-title">Follow the evidence.</h2>
+    <p class="dialog-intro">A clear path from a public address to the transaction you can verify.</p>
+    <ol class="how-steps">
+      <li><span>01</span><div><h3>Start with a token</h3><p>Paste a Solana mint address and explore the available holder sample.</p></div></li>
+      <li><span>02</span><div><h3>Look beyond the buy</h3><p>Choose wallets to monitor, then inspect co-buys and later observed sales.</p></div></li>
+      <li><span>03</span><div><h3>Open the source</h3><p>Check the original transaction. Incomplete history stays incomplete: no sale found does not mean still holding.</p></div></li>
+    </ol>
+    <p class="dialog-note">Public data. Bounded coverage. You make your own trading decisions.</p>
+    <a class="button button-primary" href="/workspace/#tokens">START EXPLORING </a>
+  </dialog>
+</body>
+</html>

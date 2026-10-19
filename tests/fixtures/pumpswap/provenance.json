@@ -1,0 +1,26 @@
+{
+  "pump_amm_idl.json": {
+    "sha256": "b7d8c57a4d9c4dd0109a9ab893052352333252d4eedced10ac091d4d66cab89b",
+    "source": "https://raw.githubusercontent.com/pump-fun/pump-public-docs/main/idl/pump_amm.json"
+  },
+  "buy-v2.json": {
+    "sha256": "79c9ddbcc90fc7e18bfba0158d7ade0c8c1e466c69bbc940600ec3a7dbac3b45",
+    "source": "finalized getTransaction from https://api.mainnet-beta.solana.com; original body preserved"
+  },
+  "buy.json": {
+    "sha256": "23fd32ab40b7cf24cee9ed84a65933ebbfc451446cfcb4143d6ecb311648d8c5",
+    "source": "finalized getTransaction from https://api.mainnet-beta.solana.com; original body preserved"
+  },
+  "exact-in-v2.json": {
+    "sha256": "1b0af16f358f1ed234893501b226cd9255d33983d3cb3969f1bcb07b65ee6444",
+    "source": "finalized getTransaction from https://api.mainnet-beta.solana.com; original body preserved"
+  },
+  "sell.json": {
+    "sha256": "e074839e99e421680e70b776ce2af6b5eec8b3cd4618289deac40197489e0a8e",
+    "source": "finalized getTransaction from https://api.mainnet-beta.solana.com; original body preserved"
+  },
+  "exact-in.json": {
+    "sha256": "dfe521154a1ec0d64c0670bc2646297715efddc1b6ec99ad49af5bdb17618e08",
+    "source": "finalized getTransaction from https://api.mainnet-beta.solana.com; original body preserved"
+  }
+}

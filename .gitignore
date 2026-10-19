@@ -1,0 +1,13 @@
+.env
+.env.*
+!.env.example
+.local-data/
+.venv/
+node_modules/
+__pycache__/
+*.py[cod]
+*.sqlite*
+*.db
+*.log
+owner.key
+.qa/
