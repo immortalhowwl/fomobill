@@ -10,7 +10,6 @@
 <p align="center">
   <a href="https://fomobill.fun"><strong>Open App</strong></a> &nbsp; · &nbsp;
   <a href="https://t.me/fomobill_bot"><strong>Telegram Bot</strong></a> &nbsp; · &nbsp;
-  <a href="https://api.fomobill.fun/workspace/"><strong>Backend Workspace</strong></a> &nbsp; · &nbsp;
   <a href="docs/setup.md"><strong>Run locally</strong></a>
 </p>
 
@@ -32,7 +31,7 @@ Pair your browser watchlist, confirm `/subscribe`, and receive supported event a
 
 ## The workspace
 
-![FOMOBILL current website](docs/images/workspace.png)
+![FOMOBILL current website](docs/images/workspace-current.png)
 
 *Current website interface. The separately maintained frontend shown here is not included in this backend and bot repository.*
 
